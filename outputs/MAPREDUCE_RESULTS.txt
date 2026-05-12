@@ -1,0 +1,71 @@
+========== Task 1: OSS Cloud Object Storage ==========
+Bucket: oss://comp3006j-mp2-iot-logs
+Region: cn-hangzhou
+Dataset: dataset/iot_logs.csv (3.45 MB, 50,000 rows)
+Status: Uploaded and verified
+
+========== Task 2, Output 1: Event Count by Sensor Type ==========
+air_quality     12661
+door            9246
+energy          5648
+humidity        5757
+motion          5510
+temperature     11178
+
+========== Task 2, Output 2: Warning/Error Count by Building ==========
+Arts            657
+Business        707
+Engineering     879
+Library         1622
+Science         2788
+SportsCentre    666
+
+========== Task 2, Output 3: Top 10 Most Active Devices ==========
+D0302   695
+D0306   678
+D0315   674
+D0307   673
+D0310   670
+D0312   668
+D0314   668
+D0311   663
+D0304   657
+D0313   657
+
+========== Task 3: Ray Abnormal Device Detection ==========
+Total: 243 abnormal entries
+
+device_id,building,reason
+D0001,Library,repeated errors
+D0001,Library,repeated high temperature
+D0002,Library,repeated errors
+D0002,Library,repeated high temperature
+D0003,Library,repeated errors
+D0003,Library,repeated high temperature
+D0004,Library,repeated errors
+D0004,Library,repeated high temperature
+D0005,Library,repeated errors
+D0005,Library,repeated high temperature
+D0006,Library,repeated errors
+D0006,Library,repeated high temperature
+D0007,Library,repeated errors
+D0007,Library,repeated high temperature
+D0008,Library,repeated errors
+D0008,Library,repeated high temperature
+D0009,Library,low battery
+D0009,Library,repeated errors
+D0009,Library,repeated high temperature
+D0010,Library,repeated errors
+D0010,Library,repeated high temperature
+... (243 total entries, see outputs/ecs_results/abnormal_devices.txt for full list)
+
+========== Runtime Environment ==========
+Cloud:     Alibaba Cloud ECS (cn-hangzhou)
+Instance:  iZbp1fgovjbwaoizzkw34sZ
+Type:      ecs.c1m1.large (2 vCPU, 2 GB)
+OS:        Alibaba Cloud Linux 3
+Hadoop:    3.3.6 (streaming mode)
+Ray:       2.10.0 (2-phase parallel, 2 CPUs)
+
+MapReduce:  ~0.6s per job
+Ray:        Phase1=0.45s, Phase2=0.06s, Total=8.67s

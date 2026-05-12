@@ -1,0 +1,6 @@
+air_quality	12661
+door	9246
+energy	5648
+humidity	5757
+motion	5510
+temperature	11178

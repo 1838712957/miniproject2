@@ -1,0 +1,23 @@
+# Sensitive credentials
+AccessKey.csv
+*.pem
+*.key
+
+# Large dataset (not needed in repo)
+Comp3006J MiniProject 2 Dataset.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
